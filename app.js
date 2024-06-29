@@ -69,6 +69,7 @@ function addOrder() {
     carts.textContent += order
   }
 }
+  
   qty1.addEventListener("keyup", addOrder);
   qty2.addEventListener("keyup", addOrder);
   qty3.addEventListener("keyup", addOrder); 
