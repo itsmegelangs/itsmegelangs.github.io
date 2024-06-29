@@ -22,7 +22,7 @@ var product6 = document.getElementById("product6")
 var qty6 = document.getElementById("qty6")
 var price6 = document.getElemnetById("price6")
 
-function AddOrder () {
+function addOrder () {
   carts.textContent=""
   if (parseFloat (qty1.value) >  0) {
     var order= qty1.value.toString() + 'pc/s x '+ price1.textContent + '------'+ product1.textContent + '------ Php' + (parseFloat(qty1.value)*parseFloat(price1.textContent)) + '\n'
