@@ -6,6 +6,11 @@ var product2 = document.getElementById("product2")
 var qty2 = document.getElementById("qty2")
 var price2 = document.getElementById("price2")
 
+var carts = document.getElementById("carts")
+var total = document.getElementById("total")
+var cash = document.getElementById("cash")
+var change= document.getElementById("change")
+
 function addOrder() {
   carts.textContent=""
   if (parseFloat (qty1.value) >  0) {
