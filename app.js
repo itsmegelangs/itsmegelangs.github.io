@@ -70,10 +70,10 @@ function addOrder() {
   }
 }
   qty1.addEventListener("keyup", addOrder);
-  qty2.addEventLIstener("keyup", addOrder);
-  qty3.addEventLIstener("keyup", addOrder); 
-  qty4.addEventLIstener("keyup", addOrder);
-  qty5.addEventLIstener("keyup", addOrder);
-  qty6.addEventLIstener("keyup", addOrder);
-  qty7.addEventLIstener("keyup", addOrder);
+  qty2.addEventListener("keyup", addOrder);
+  qty3.addEventListener("keyup", addOrder); 
+  qty4.addEventListener("keyup", addOrder);
+  qty5.addEventListener("keyup", addOrder);
+  qty6.addEventListener("keyup", addOrder);
+  qty7.addEventListener("keyup", addOrder);
 
