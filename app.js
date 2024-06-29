@@ -1,6 +1,6 @@
 var product1 = document.getElementById("product1")
 var qty1 = document.getElementById("qty1")
-var price1 = document.getElemnetById("price1")
+var price1 = document.getElementById("price1")
 
 var product2 = document.getElementById("product2")
 var qty2 = document.getElementById("qty2")
