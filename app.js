@@ -4,7 +4,7 @@ var price1 = document.getElementById("price1")
 
 var product2 = document.getElementById("product2")
 var qty2 = document.getElementById("qty2")
-var price2 = document.getElemnetById("price2")
+var price2 = document.getElementById("price2")
 
 function addOrder() {
   carts.textContent=""
