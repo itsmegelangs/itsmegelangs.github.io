@@ -68,13 +68,11 @@ function addOrder() {
     //carts.textContent += carts.value.toString() + "\n";
     carts.textContent += order
   }
-}
-  function totalCost = () {
-     total.textContent=""
-  if (parseFloat (qty1.value) >  0) {
+   if (parseFloat (qty1.value) >  0) {
     var total= qty1.value.toString() + ' pc/s x '+ price1.textContent + '------'+ product1.textContent + '------ Php' + (parseFloat(qty1.value)*parseFloat(price1.textContent)) + '\n'
     //carts.textContent += carts.value.toString() + "\n";
     total.textContent += order
+}
     
   qty1.addEventListener("keyup", addOrder);
   qty2.addEventListener("keyup", addOrder);
@@ -83,4 +81,3 @@ function addOrder() {
   qty5.addEventListener("keyup", addOrder);
   qty6.addEventListener("keyup", addOrder);
   qty7.addEventListener("keyup", addOrder);
-  qty1.addEventListener("keyup", totalCost);
