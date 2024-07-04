@@ -35,7 +35,7 @@ function addOrder() {
   carts.textContent=""
   totalCost = 0
   if (parseFloat (qty1.value) >  0) {
-    var order= qty1.value.toString() + ' pc/s x '+ price1.textContent + '------'+ product1.textContent + '------ Php' + (parseFloat(qty1.value)*parseFloat(price1.textContent)) + float(totalCost) * int(qty1) '\n'
+    var order= qty1.value.toString() + ' pc/s x '+ price1.textContent + '------'+ product1.textContent + '------ Php' + (parseFloat(qty1.value)*parseFloat(price1.textContent)) + '\n'
     //carts.textContent += carts.value.toString() + "\n";
     carts.textContent += order
   }
