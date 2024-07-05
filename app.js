@@ -71,17 +71,18 @@ function addOrder() {
   function total () {
     total = ""
      if (parseFloat (qty.value) >  0) {
-       var total= qty.value.toString() * price.textContent + '\n'
-       //total.textContent += total.value.toString() + "\n";
+       var total= total.toString()+ (parseFloat(totalPrice)*parseFloat(qty)  + '\n'
+       //total.textContent += total.toString() + "\n";
        total += total
      }
   }
 }
 
-  qty1.addEventListener("keyup", addOrder, total);
+  qty1.addEventListener("keyup", addOrder);
   qty2.addEventListener("keyup", addOrder);
   qty3.addEventListener("keyup", addOrder); 
   qty4.addEventListener("keyup", addOrder);
   qty5.addEventListener("keyup", addOrder);
   qty6.addEventListener("keyup", addOrder);
   qty7.addEventListener("keyup", addOrder);
+  total.addEventListener("keyuo", total);
