@@ -77,7 +77,6 @@ function addOrder() {
   } 
   }
 
-  total.addEventListener("keyup", totalCost);
   qty1.addEventListener("keyup", addOrder);
   qty2.addEventListener("keyup", addOrder);
   qty3.addEventListener("keyup", addOrder); 
