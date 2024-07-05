@@ -68,9 +68,17 @@ function addOrder() {
     //carts.textContent += carts.value.toString() + "\n";
     carts.textContent += order
   } 
+  function total () {
+    total.textContent=""
+     if (parseFloat (qty1.value) >  0) {
+       var total= qty1.value.toString() * price1.textContent + '\n'
+       //total.textContent += total.value.toString() + "\n";
+       total.textContent += total
+     }
+  }
 }
 
-  qty1.addEventListener("keyup", addOrder);
+  qty1.addEventListener("keyup", addOrder, total);
   qty2.addEventListener("keyup", addOrder);
   qty3.addEventListener("keyup", addOrder); 
   qty4.addEventListener("keyup", addOrder);
