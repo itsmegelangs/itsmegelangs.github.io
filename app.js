@@ -69,11 +69,11 @@ function addOrder() {
     carts.textContent += order
   } 
   function total () {
-    total.textContent=""
-     if (parseFloat (qty1.value) >  0) {
-       var total= qty1.value.toString() * price1.textContent + '\n'
+    total = ""
+     if (parseFloat (qty.value) >  0) {
+       var total= qty.value.toString() * price.textContent + '\n'
        //total.textContent += total.value.toString() + "\n";
-       total.textContent += total
+       total += total
      }
   }
 }
