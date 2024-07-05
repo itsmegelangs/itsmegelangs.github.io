@@ -68,15 +68,25 @@ function addOrder() {
     //carts.textContent += carts.value.toString() + "\n";
     carts.textContent += order
   } 
-  function total () {
-    total = ""
-     if (parseFloat (qty.value) >  0) {
-       var total= total.toString()+ (parseFloat(totalPrice)*parseFloat(qty)  + '\n'
-       //total.textContent += total.toString() + "\n";
-       total += total
-     }
-  }
+  
+  function total() {
+  let totalCost = 0;
+
+  const ordersText = carts.textContent.trim();
+  const orders = ordersText.split('\n');
+
+  for (let order of orders) {
+    if (order.trim() === '') continue;
+    const quantityMatch = order.match(/(\d+) pc\/s x/);
+    const priceMatch = order.match(/Php\s*([\d.]+)/);
+
+    if (quantityMatch && priceMatch) {
+      const quantity = parseFloat(quantityMatch[1]);
+      const price = parseFloat(priceMatch[1]);
+      totalCost += quantity * price;
+    }
 }
+  }
 
   qty1.addEventListener("keyup", addOrder);
   qty2.addEventListener("keyup", addOrder);
@@ -85,4 +95,4 @@ function addOrder() {
   qty5.addEventListener("keyup", addOrder);
   qty6.addEventListener("keyup", addOrder);
   qty7.addEventListener("keyup", addOrder);
-  total.addEventListener("keyuo", total);
+  total.addEventListener("keyup", total);
