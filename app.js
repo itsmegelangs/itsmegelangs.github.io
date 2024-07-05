@@ -67,7 +67,7 @@ function addOrder() {
     var order= qty7.value.toString() + ' pc/s x '+ price7.textContent + '------'+ product7.textContent + '------ Php' + (parseFloat(qty7.value)*parseFloat(price7.textContent)) + '\n'
     //carts.textContent += carts.value.toString() + "\n";
     carts.textContent += order
-  }
+  } 
 }
 
   qty1.addEventListener("keyup", addOrder);
