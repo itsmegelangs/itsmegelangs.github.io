@@ -86,7 +86,6 @@ function addOrder() {
        change.value = "Change: Php" + changeAmount.toFixed(2);
      }
   } 
-  }
 
   qty1.addEventListener("keyup", addOrder);
   qty2.addEventListener("keyup", addOrder);
