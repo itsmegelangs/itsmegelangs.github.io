@@ -30,7 +30,8 @@ var products = [
           qty: document.getElementById('qty6'),
           price: parseFloat(document.getElementById('price6').textContent),
         },
-           product: document.getElementById('product6').textContent,
+        {
+          product: document.getElementById('product6').textContent,
           qty: document.getElementById('qty7'),
           price: parseFloat(document.getElementById('price7').textContent),
         },
@@ -84,6 +85,3 @@ var products = [
       products.forEach(function (item) {
         item.qty.addEventListener('keyup', addOrder)
       })
-    </script>
-  </body>
-</html>
